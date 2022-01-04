@@ -1,5 +1,7 @@
 package com.borczeAngelov.pocdeployedhelloWorldwebapp.controller;
 
+import java.time.LocalTime;
+
 import com.borczeAngelov.pocdeployedhelloWorldwebapp.model.PingServerRespone;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +14,7 @@ public class HelloWorldController {
 
     @GetMapping
     public PingServerRespone pingServer() {
-        var message = "This is \"Hello world\" respone from server.";
+        var message = "This is ping-pong respone from server. LocalTime = " + LocalTime.now();
         return new PingServerRespone(message);
     }
 }
