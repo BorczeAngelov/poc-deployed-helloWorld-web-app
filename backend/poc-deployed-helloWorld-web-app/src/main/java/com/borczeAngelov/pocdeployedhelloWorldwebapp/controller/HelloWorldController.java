@@ -1,5 +1,7 @@
 package com.borczeAngelov.pocdeployedhelloWorldwebapp.controller;
 
+import com.borczeAngelov.pocdeployedhelloWorldwebapp.model.PingServerRespone;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloWorldController {
 
     @GetMapping
-    public String pingServer() {
-        return "This is \"Hello world\" respone from server.";
+    public PingServerRespone pingServer() {
+        var message = "This is \"Hello world\" respone from server.";
+        return new PingServerRespone(message);
     }
 }
