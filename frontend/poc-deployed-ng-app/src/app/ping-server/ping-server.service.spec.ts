@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { HelloWorldService } from './hello-world.service';
+import { PingServerService } from './ping-server.service';
 
-describe('HelloWorldService', () => {
-  let service: HelloWorldService;
+describe('PingServerService', () => {
+  let service: PingServerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(HelloWorldService);
+    service = TestBed.inject(PingServerService);
   });
 
   it('should be created', () => {

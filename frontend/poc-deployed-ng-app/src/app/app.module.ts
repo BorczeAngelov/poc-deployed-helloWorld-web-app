@@ -4,13 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWorldComponentComponent } from './hello-world-component/hello-world-component.component';
 import { FormsModule } from '@angular/forms';
+import { PingServerComponent } from './ping-server/ping-server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponentComponent
+    PingServerComponent
   ],
   imports: [
     BrowserModule,

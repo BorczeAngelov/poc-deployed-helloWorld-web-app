@@ -1,14 +1,14 @@
-<p>Angular component</p>
+<h1>Ping-Server Component</h1>
 
 <div>
     <label>Server ApiUrl = </label>
     <label>{{serverApiUrl}}</label>
-
 </div>
 
 <div>
     <button (click)="pingServer()">Ping Server</button>
 </div>
+
 <div>
     <label>Server Response = </label>
     <label>{{(pingServerRespone$ | async)?.message}}</label>
