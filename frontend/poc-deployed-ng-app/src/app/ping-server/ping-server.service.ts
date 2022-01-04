@@ -14,6 +14,7 @@ export class PingServerService {
   constructor(private http: HttpClient) { }
 
   pingServer(): Observable<PingServerRespone> {
-    return this.http.get<PingServerRespone>(environment.apiUrl + this.apiControllerSuffix);
+    const url = environment.apiUrl + this.apiControllerSuffix;
+    return this.http.get<PingServerRespone>(url);
   }
 }
